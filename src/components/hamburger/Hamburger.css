@@ -1,0 +1,10 @@
+@import './../../assets/styles/variables.css';
+
+.burger_btn {
+	font-size: 1.7rem;
+	cursor: pointer;
+}
+
+.burger_btn:before.active {
+	background-color: var(--color-dark);
+}

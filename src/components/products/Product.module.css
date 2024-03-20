@@ -1,0 +1,168 @@
+@import './../../assets/styles/variables.css';
+
+.product {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.product__card {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/* flex-grow: 1; */
+	padding: 24px;
+	column-gap: 20px;
+}
+
+.images {
+	flex: 0 0 50%;
+	display: flex;
+	gap: 40px;
+}
+
+.current {
+	width: 375px;
+	height: 475px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 6px;
+}
+
+.images__list {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 150px 150px;
+
+	gap: 10px;
+}
+
+.image {
+	width: 70px;
+	height: 140px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	cursor: pointer;
+	transition: box-shadow 0.5s ease-in-out;
+}
+
+.image:hover {
+	box-shadow: 0 0 20px 5px var(--color-medium-grey-shade);
+}
+
+.info {
+	flex: 0 0 40%;
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	margin-bottom: 28px;
+	font-size: 38px;
+	line-height: 1.2;
+	font-weight: 600;
+}
+
+.color,
+.sizes {
+	font-size: 14px;
+	display: flex;
+	column-gap: 16px;
+	align-items: center;
+}
+
+.color {
+	margin-bottom: 15px;
+}
+
+.sizes {
+	margin-bottom: 25px;
+}
+
+.color span,
+.sizes span {
+	font-size: 18px;
+}
+
+.size {
+	color: var(--color-medium-grey);
+	font-size: 22px;
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.description__title {
+	font-size: 18px;
+}
+
+.description__text {
+	color: var(--color-medium-grey);
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 992px) {
+	.current {
+		width: 325px;
+		height: 425px;
+	}
+
+	.info {
+		flex: 0 0 100%;
+		margin-top: 50px;
+	}
+
+	.images__list {
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.images {
+		gap: 20px;
+	}
+	.current {
+		width: 225px;
+		height: 325px;
+	}
+
+	.images__list {
+		grid-template-rows: 110px 110px;
+	}
+
+	.image {
+		width: 50px;
+		height: 110px;
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.title {
+		font-size: 28px;
+	}
+	.current {
+		width: 125px;
+		height: 225px;
+	}
+
+	.images__list {
+		grid-template-rows: 80px 80px;
+	}
+
+	.image {
+		width: 40px;
+		height: 80px;
+	}
+}

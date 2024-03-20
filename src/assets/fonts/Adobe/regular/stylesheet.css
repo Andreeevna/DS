@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Adobe Arabic';
+    src: url('AdobeArabic-Regular.eot');
+    src: url('AdobeArabic-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AdobeArabic-Regular.woff2') format('woff2'),
+        url('AdobeArabic-Regular.woff') format('woff'),
+        url('AdobeArabic-Regular.ttf') format('truetype'),
+        url('AdobeArabic-Regular.svg#AdobeArabic-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

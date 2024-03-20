@@ -1,0 +1,331 @@
+@import './variables.css';
+
+@font-face {
+	font-family: 'Adobe Arabic';
+	src: url('./../fonts/Adobe/bold/AdobeArabic-Bold.eot');
+	src: url('./../fonts/Adobe/bold/AdobeArabic-Bold.eot?#iefix')
+			format('embedded-opentype'),
+		url('./../fonts/Adobe/bold/AdobeArabic-Bold.woff2') format('woff2'),
+		url('./../fonts/Adobe/bold/AdobeArabic-Bold.woff') format('woff'),
+		url('./../fonts/Adobe/bold/AdobeArabic-Bold.ttf') format('truetype'),
+		url('./../fonts/Adobe/bold/AdobeArabic-Bold.svg#AdobeArabic-Bold')
+			format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Adobe Arabic';
+	src: url('./../fonts/Adobe/regular/AdobeArabic-Regular.eot');
+	src: url('./../fonts/Adobe/regular/AdobeArabic-Regular.eot?#iefix')
+			format('embedded-opentype'),
+		url('./../fonts/Adobe/regular/AdobeArabic-Regular.woff2') format('woff2'),
+		url('./../fonts/Adobe/regular/AdobeArabic-Regular.woff') format('woff'),
+		url('./../fonts/Adobe/regular/AdobeArabic-Regular.ttf') format('truetype'),
+		url('./../fonts/Adobe/regular/AdobeArabic-Regular.svg#AdobeArabic-Regular')
+			format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Adobe Arabic';
+	src: url('./../fonts/Adobe/italic/AdobeArabic-Italic.eot');
+	src: url('./../fonts/Adobe/italic/AdobeArabic-Italic.eot?#iefix')
+			format('embedded-opentype'),
+		url('./../fonts/Adobe/italic/AdobeArabic-Italic.woff2') format('woff2'),
+		url('./../fonts/Adobe/italic/AdobeArabic-Italic.woff') format('woff'),
+		url('./../fonts/Adobe/italic/AdobeArabic-Italic.ttf') format('truetype'),
+		url('./../fonts/Adobe/italic/AdobeArabic-Italic.svg#AdobeArabic-Italic')
+			format('svg');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'AnastasiaScriptC';
+	src: url('./../fonts/AnastasiaScript/AnastasiaScriptC.eot');
+	src: url('./../fonts/AnastasiaScript/AnastasiaScriptC.eot?#iefix')
+			format('embedded-opentype'),
+		url('./../fonts/AnastasiaScript/AnastasiaScriptC.woff2') format('woff2'),
+		url('./../fonts/AnastasiaScript/AnastasiaScriptC.woff') format('woff'),
+		url('./../fonts/AnastasiaScript/AnastasiaScriptC.ttf') format('truetype'),
+		url('./../fonts/AnastasiaScript/AnastasiaScriptC.svg#AnastasiaScriptC')
+			format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+body {
+	font-family: 'Adobe Arabic', 'sans serif';
+	font-size: 16px;
+	line-height: 1;
+	color: var(--color-dark);
+	background-color: var(--color-light);
+	height: 100vh;
+}
+
+.app {
+}
+
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.bg_container {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 1420px;
+}
+
+.av_container {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 1120px;
+}
+
+.swiper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: var(--color-light);
+
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.next_slide,
+.prev_slide {
+	position: absolute;
+	top: 50%;
+	z-index: 50;
+	height: 80px;
+	transition: all 0.7s ease-in-out;
+}
+
+.next_slide:hover,
+.prev_slide:hover {
+	background-color: rgba(60, 60, 59, 0.5);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.next_slide:disabled,
+.prev_slide:disabled {
+	opacity: 0.5;
+}
+
+.next_slide {
+	right: 3%;
+}
+
+.prev_slide {
+	left: 3%;
+}
+
+.next_slide svg,
+.prev_slide svg {
+	width: 40px;
+	height: 80px;
+}
+
+.next_slide svg,
+.prev_slide svg {
+	fill: var(--color-light);
+}
+
+@media screen and (max-width: 576px) {
+	.next_slide,
+	.prev_slide {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 488px) {
+	.footer__logo {
+		display: none !important;
+	}
+}
+
+/* styles active */
+
+.menuBurger {
+	margin-top: 15px;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 50px;
+	left: 0;
+	transform: translateX(-130%);
+	transition: transform 0.4s ease-in-out;
+}
+
+.menuBurger.activeBurger {
+	transform: translateX(0);
+}
+
+.header {
+	padding-top: 10px;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	height: 75px;
+	font-size: 18px;
+	color: var(--color-light);
+	background: linear-gradient(
+		180deg,
+		var(--color-medium-grey-shade) 0,
+		transparent
+	);
+	transition: all 0.2s ease-in-out;
+}
+
+.header.headerActive {
+	background: var(--color-light);
+	color: var(--color-dark);
+}
+
+.header_pos {
+	position: static;
+}

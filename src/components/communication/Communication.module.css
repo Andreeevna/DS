@@ -1,0 +1,90 @@
+@import './../../assets/styles/variables.css';
+
+.communication {
+	margin: 120px 0 120px 0;
+}
+
+.communication_box {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.communication_box__form {
+	flex: 0 0 35%;
+}
+
+.communication_box__title {
+	margin-bottom: 70px;
+	font-size: 46px;
+	line-height: 1.3;
+	font-weight: 600;
+}
+
+.desc_box {
+	flex: 0 0 50%;
+	align-self: center;
+}
+
+.desc_box__item {
+	padding: 0 20px 0 40px;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+	height: 150px;
+	box-shadow: -10px 10px 10px 10px rgba(0, 0, 0, 0.03);
+}
+
+.desc_box__item:nth-child(1) {
+	margin-bottom: 40px;
+}
+
+.desc_box__text {
+	margin-left: 20px;
+	font-size: 26px;
+	line-height: 1.2;
+	color: var(--color-medium-blue);
+	font-weight: 500;
+}
+
+@media screen and (max-width: 1140px) {
+	.communication_box__title {
+		font-size: 36px;
+	}
+}
+
+@media screen and (max-width: 844px) {
+	.communication_box__form {
+		flex: 0 0 40%;
+	}
+
+	.communication_box__title {
+		margin-bottom: 40px;
+		font-size: 32px;
+		line-height: 1.3;
+	}
+
+	.desc_box__text {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 631px) {
+	.communication {
+		margin: 60px 0 60px 0;
+	}
+	.communication_box__form {
+		flex: 0 0 100%;
+	}
+
+	.desc_box {
+		flex: 0 0 100%;
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 378px) {
+	.desc_box__text {
+		font-size: 20px;
+	}
+}

@@ -1,0 +1,14 @@
+:root {
+	--color-dark: #3c3c3b;
+	--color-light: #ffffff;
+	--color-light-grey: rgb(255, 255, 255, 0.5);
+	--color-medium-grey: #898989;
+	--color-dark-grey: #3c3c3b;
+	--color-medium-blue: #383451;
+
+	--color-input-background: #f5f5f5;
+	--color-dark-button-background: #6b6b6b;
+
+	--color-medium-grey-shade: rgba(80, 85, 86, 0.5);
+	--color-dark-grey-shade: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Adobe Arabic';
+    src: url('AdobeArabic-Bold.eot');
+    src: url('AdobeArabic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('AdobeArabic-Bold.woff2') format('woff2'),
+        url('AdobeArabic-Bold.woff') format('woff'),
+        url('AdobeArabic-Bold.ttf') format('truetype'),
+        url('AdobeArabic-Bold.svg#AdobeArabic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

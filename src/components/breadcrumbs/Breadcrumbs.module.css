@@ -1,0 +1,26 @@
+@import './../../assets/styles/variables.css';
+
+.breadcrumbs {
+	position: absolute;
+	left: 1.5%;
+	bottom: 50px;
+	display: flex;
+	align-items: center;
+	gap: 0 30px;
+}
+
+.crumb {
+	position: relative;
+	padding-bottom: 4px;
+	padding-right: 4px;
+	color: var(--color-light);
+	border-bottom: 1px solid var(--color-light-grey);
+}
+
+.crumb::after {
+	content: '/';
+	position: absolute;
+	bottom: 2px;
+	right: -15px;
+	color: var(--color-light-grey);
+}

@@ -1,0 +1,77 @@
+@import './../../assets/styles/variables.css';
+
+.header {
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding: 10px 0 10px 0;
+	font-size: 18px;
+	color: var(--color-light);
+	background: linear-gradient(
+		180deg,
+		var(--color-medium-grey-shade) 0,
+		transparent
+	);
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__menu {
+	display: flex;
+	align-items: center;
+	gap: 0 20px;
+}
+
+.header__menu span {
+	font-size: 22px;
+}
+
+.header__contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transform: translateY(10px);
+}
+
+.contact__text {
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.contact__link {
+	font-size: 28px;
+}
+
+.icon__menu {
+	display: none;
+}
+
+.contact__link_icon {
+	display: none;
+}
+
+@media screen and (max-width: 576px) {
+	.header__contact {
+		display: none;
+	}
+
+	.header__menu span {
+		display: none;
+	}
+
+	.icon__menu {
+		display: block;
+		font-size: 1.5em;
+	}
+	.contact__link_icon {
+		display: block;
+	}
+	.icon__contact {
+		font-size: 1.5em;
+	}
+}
