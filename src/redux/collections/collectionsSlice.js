@@ -12,7 +12,7 @@ export const getCollections = createAsyncThunk(
 	'collections/getCollections',
 	async (_, thunkAPI) => {
 		try {
-			const res = await axios(`${BASE_URL}/collections`)
+			const res = await axios(`/collections`)
 			return res.data
 		} catch (err) {
 			console.log(err)
